@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS</title>
+
+    <!-- Externall CSS conectando com o CSS externo -->
+     <link rel="stylesheet" href="css/style.css"/>
+
+    <!--Internal CSS -> linha 22  -->
+    <style>
+        p{
+            color: purple;
+            font-size: 40px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Inline CSS na mesma linha do HTML - forma mais antiga de escrever site-->
+    <h1 style="color:#8a8211"; font-size: 50px>Cor e tamanho da fonte(cabeçalho)</h1>
+    <p style="color: red"> Este é um paragrafo vermelho</p>
+
+    <!-- Internal CSS no mesmo docmumento HTML - fonte na linha 8-->
+    <p>Parágrafo com Estilo Internal</p>
+    <p>Aproveitando a regra do outro parágrafo do internal</p>
+
+    <!-- External CCS, vem de outra pasta externa - ja diz , vem ooutro local-->
+    <h3>Título com Estilo do External</h3>
+
+    <!-- Classe aplicando na class todos recebem-->
+    <p class="paragrafo">Esse é um parágrafo com estilo da class</p>
+    <p class="paragrafo">Esse é outro com estilo da class</p>
+
+    <!-- Id um algo especifico - uma "classe única"-->
+    <h2 id="titulocomid">Título com estilo do id</h2>
+    
+    <!-- Regra de ordem css  -->
+     <h4 id="id-titulo" class="class-titulo">Título 1</h4>
+     <h4 class="class-titulo">Título 2</h4>
+     <h4>Título 3</h4>
+
+</body>
+</html>

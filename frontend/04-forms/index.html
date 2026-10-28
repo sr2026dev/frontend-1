@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="./css/style.css"/> <!-- link com a pasta CSS (estilos) -->
+</head>
+<body>
+    <h1>Formulários</h1>
+    <form><!--o form é que cuida de formulários -->
+        <div><!-- a div divisão fara o bloco de dados -->
+
+            <label for="nome">Nome:</label>
+            <input type="text" name="nomecompleto" placeholder="Insira seu nome completo" required>
+       
+            <!-- input Number -->
+             <label for="certificados"> Quantos certificados você possui?</label>
+             <input type="number" name="certificados" placeholder="selecione">  <!--recebe o numero e passa para o campo certificados  -->
+        
+            <!-- input E-mail -->
+             <label for="emailinserido">Insira o seu e-mail:</label>
+             <input type="email" name="emailinserido" placeholder="Insira seu e-mail"/> <!-- recebe email e passa ao emailinserido  -->
+         
+            <!-- input Password - Senha -->
+             <label for="senha">Insira a senha:</label>
+             <input type="password" name="senha"/>
+
+            <!-- input Textarea - area de texo para comentário do usuário -->
+             <label for="feedback">Descreva seu feedback sobre o site:</label>
+             <textarea name="feedback"></textarea>
+             
+            <!-- input de data -->
+              <label for="datadenascimento">Data de nascimento:</label>
+              <input type="date" name="datadenascimento"/>
+
+            <!-- Input file - arquivos anexos -->
+             <label for="arquivo">Insira o seu currÍculo em PDF.</label>
+             <input type="file" name="arquivo"/>
+            
+             <!-- input radio - somente uma seleção dentre as opções -->
+              <label for="genero">Qual seu gênero:</label>
+              <div class="radio">
+                <input type="radio" value="Feminino" name="genero">
+                <label for="Feminino"></label>Feminino</label>
+              </div>
+
+              <div class="radio">
+                <input type="radio" value="Masculino" name="genero">
+                <label for="Masculino">Masculino
+              </div>
+
+              <div class="radio">
+                <input type="radio" value="NaoBinario" name="genero">
+                <label for="NaoBinario">Não Binário</label>
+              </div>
+
+              <div class="radio">
+                <input type="radio" value="NaoInformou" name="genero">
+                <label for="NaoInformou">Prefiro não informar</label>
+              </div>
+
+            <!-- input checkbox uma ou mais opções-->
+            <div>
+                <label for="linguasestrageiras">Quais linguas você pretende estudar:</label>
+                
+                <div class="radio">
+                    <input type="checkbox" name="linguasestrageiras" value="ingles">
+                    <label for="ingles">Inglês</label>
+                </div> 
+
+                <div class="radio">
+                    <input type="checkbox" name="linguasestrageiras" value="espanhol">
+                    <label for="espanhol">Espanhol</label>
+                </div> 
+                
+                <div class="radio">
+                    <input type="checkbox" name="linguasestrageiras" value="alemao">
+                    <label for="alemao">Alemão</label>
+                </div> 
+            
+            </div> 
+        <!-- select - menu suspenso -->
+         <div>
+            <label for="cidade">Selecione sua cidade:</label>
+            <select name="cidade">
+                <option value="Osasco">Osasco</option>
+                <option value="SaoPaulo" selected>São Paulo</option>
+                <option value="Taboao">Taboão da Serra</option>
+            </select>
+         </div>
+  
+        </div>
+        <!-- limpando/resetando o formulário -->
+        <input type="reset" value="Limpar"/>
+        <!-- submit botão ou botão de enviar/gravar os dados no formulário-->
+        <input type="submit" value="Enviar"/>
+    </form>
+</body>
+</html>
+
+<!--  -->

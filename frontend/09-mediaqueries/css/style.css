@@ -1,0 +1,32 @@
+/* Media query - varia de acordo com tamanho da tela*/
+h1{
+    color: orangered;
+}
+
+/* min-width ou técnica mobile first para o P aqui tamanho normal */
+p{
+    background-color: aquamarine;
+    color: black;
+}
+
+@media screen and (max-width: 500px) {
+    h1{
+        color: greenyellow;
+    }
+}
+
+/* min-width ou técnica mobile first aqui quando alterar o tamanho da tela >800*/
+@media screen and (min-width: 800px){
+    p{
+        background-color: black;
+        color: yellow;
+    }
+}
+
+/* Landscape  o texto some ao deixar a tela na horizontal*/
+@media screen and (orientation: landscape){
+    h2{
+        display: none;
+    }
+    
+}

@@ -1,0 +1,18 @@
+/* corpo */
+body{ 
+    padding-bottom: 500px;
+}
+
+/* divisão */
+div{
+    margin-bottom: 15px;
+}
+
+div input, div label{
+    display: block;
+}
+
+/* input radio */
+.radio label, .radio input{
+    display: inline-block;
+}

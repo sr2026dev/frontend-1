@@ -1,0 +1,155 @@
+/* Altura e largura */
+.altura-largura{
+    height: 500px;
+    width: 200px;
+    background-color: blueviolet;
+}
+
+.altura-largura-nova{
+    height: 200px;
+    background-color: #999;
+}
+
+/*Paddding - o mesmo que margem dentro da Div*/
+.sem-padding{
+    background-color: aqua;
+    padding: none;
+    width: 200px;
+    height: 200px;
+}
+
+.com-padding{
+    width: 300px;
+    height: 300px;
+    background-color: blueviolet;
+    padding: 10px;
+}
+
+/* Padding lados */
+.padding-lados{
+    background-color: crimson;
+    color: #fff;
+    padding-top: 10px;
+    padding-left: 150px;
+    padding-right: 5px;
+    padding-bottom: 40px;
+}
+
+/* Padding abreviada (escrita abreviada)*/
+.shorthand-padding{
+    background-color: #333;
+    padding: 6px 12px 18px 24px; /* 6 topo- 12 direita-18 base- 24esquerda */
+}
+
+.shorthand-padding-2{
+    background-color: #555;
+    padding: 10px 20px; /* 10 para topo/base e 20 para direita/esquerda */
+}
+
+/* border - definição de borda  */
+.border{
+    border: 5px solid blue;/* borda solida e azul */
+    padding: 10px; /* todos os lados */
+}
+
+.border-2{
+    border: 2px dotted #785; /* borda pontilhada e verde */
+    padding: 25px;/* todos os lados */
+}
+
+/* Borda individual por lado */
+.borda-esquerda{
+    border-left: 3px solid yellowgreen;
+    background-color: #111;
+    color: #fff;
+    padding: 25px;
+}
+
+.borda-inferior{
+    border-bottom: 7px double #548;
+    background-color: #111;
+    color: #fff;
+    padding: 25px;
+}
+
+.borda-superior{
+    /*  aqui a borda é pontilhada (bolinha grande)
+    border-top: 10px dotted red ;
+    background-color: aquamarine;
+    color:#808080;
+    padding: 10px;
+     */
+    
+     background-color: aquamarine;
+    color: #808080;
+    padding: 10px;
+    padding-top: 20px; /* Esspaço interno superior para o texto não sobrepor as bolinhas */
+ 
+    /* Cria as 5 bolinhas vermelhas usando gradiente */
+    background-image: radial-gradient(circle, red 5px, transparent 5px);
+    background-size: 20% 10px; /* 20% distribui a largura em 5 partes iguais */
+    background-repeat: repeat-x;
+    background-position: top left;
+}
+
+.borda-direita{
+    border-right: 2px dashed pink;
+    background-color: cornflowerblue;
+    color: pink;
+    padding: 10px;
+}
+
+/* Borda distintas por lado */
+.borda-total{
+    border-left: 5px solid rosybrown;
+    border-right: 5px solid rosybrown;
+    border-top: 5px double orange;
+    border-bottom: 5px double orange;
+    color: #808080;
+    padding: 25px;
+}
+/* Borda arredondada */
+.arredondado{
+    border: 5px solid red;
+    background-color: burlywood;
+    color: white;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.arredondado2{
+    background-color: burlywood;
+    color: white;
+    padding: 20px;
+    border-radius: 20px;
+}
+/* margem */
+.margem{
+    margin: 10px;
+    background-color: darkblue;
+    color:yellow
+}
+
+.margem-no-topo{
+    margin-top: 70px;
+    background-color: dodgerblue;
+    padding: 10px;
+}
+
+.margem-diferenciada{
+    background-color: cornflowerblue;
+    margin: 7px 10px 9px 30px;
+}
+
+/* Box Model juntos */
+.box-model{
+    background-color: aqua; /* cor fundo  */
+    color: #000; /* cor fonte */
+    width: 200px; /* largura */
+    height: 200px; /* altura */
+    padding: 10px 10px 15px 25px;
+    border: 5px solid violet;
+    border-radius: 10px; /* cantos arredondado */
+    margin: auto;
+}
+

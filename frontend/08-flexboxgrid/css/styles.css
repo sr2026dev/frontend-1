@@ -1,0 +1,112 @@
+/* body = corpo do site "tela" */
+body{
+    padding-bottom: 550px;
+}
+
+/*FlexBox  */
+.flexbox{
+    display: flex;
+    background-color: blue;
+    color: white;
+    margin-bottom: 30px;
+}
+
+/* Flex-direction - direção do flex - column = um sobre outro*/
+.flex-direction{
+    display: flex;
+    flex-direction: column;
+    background-color: #bbb;
+}
+
+/* 1º flex-wrap depois a caixa, wrap diz se quebra linha ou não */
+.flex-wrap{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+.caixa{
+    height: 50px;
+    width: 33%;
+    border: 2px solid salmon;
+}
+
+/* Flex Justify-content 1º center e algo de caixa */
+.center, .space-around, .space-between, .end{
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.center .caixa, .space-around .caixa, .space-between .caixa, .end .caixa{
+    width: 60px;
+}
+
+.center{
+    justify-content: center;
+}
+.space-around{
+    justify-content: space-around;
+}
+.space-between{
+    justify-content: space-between;
+}
+.end{
+    justify-content: end;
+}
+
+/* Align-Items  - aqui a caixa geral*/
+.align-center, .flex-end, .strech{
+    display: flex;
+    height: 200px;
+    margin-bottom: 30px;
+    border: 3px solid black;
+}
+
+.align-center .caixa, .flex-end .caixa, .strech .caixa{
+    width: 60px
+}
+
+.align-center{     /* centralizado no elemento */
+    align-items: center;
+    justify-content: center;
+}
+/*  */
+.flex-end{  /* no final do elemento */
+    align-items: flex-end;
+}
+
+.strech{  /* avisa que será alongado  */
+    align-items: stretch;         
+}
+
+.strech .caixa{  /* aqui alonga para 100 % do espaço */
+    height: auto;
+}
+
+.gap{
+    display: flex; /*  distribuição dos itens dentro da div */
+    flex-wrap: wrap; /* wrap diz se quebra linha ou não - combina c/ display */
+    justify-content: center; /* centralizado */
+    border: 1px solid blue; /* borda da div */
+    gap: 8px; /* aqui sim o tamanho do columns e row gap  */
+}
+
+.gap .caixa{
+    width: 32%;
+}
+
+/* align-self */
+.align-self{
+    height: 400px;
+    display: flex;
+    align-items: center;
+    border: 2px solid blue;
+}
+
+.align-self .diferenciada{
+    align-self: flex-end;   
+}
+
+.align-self .diferenciada2{
+    align-self: flex-start;
+}

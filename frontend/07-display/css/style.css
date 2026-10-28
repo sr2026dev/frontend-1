@@ -1,0 +1,125 @@
+/* Display: Bloco embutido - lado a lado */
+.inline-block{
+    width: 500px; /* largura */
+    height: 500px; /* altura */
+    background-color: #754;
+    font-size: xx-large;
+    color: white;
+    margin: 15px; /* margem */
+    display: inline-block;    /* um ao lado do outro */
+}
+/* Display: Bloco exibição - abaixo do outro */
+.block{
+    background-color: darkmagenta;
+    font-size: xx-large;
+    color: white;
+    margin: 10px;
+    display: block; /*  um abaixo do outro*/
+}
+
+/* Escondendo um elemento */
+.escondendo{
+    display: none;/* seria atribuido no momento de sumir com o elemento  */
+}
+
+/* Posição Estática - segue o fluxo do html,
+stattic não são afetados por top, left, rigth, bottom */
+ .static{
+    position: static;
+    background-color: #848;
+    color: #fff;
+    width: 100px;
+    height: 100px;
+ }
+
+ /* Posição relativa - ao item anterior - tem top left etc */
+ .relative{ 
+    position: relative;
+    width: 100px;
+    height: 100px;
+    background-color: #333;
+    color: white;
+    top: 50px;
+    left: 50px;
+ }
+
+ /* Posição Absoluta - posiciono onde quiser aceita top left etc */
+ .absolute{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: #785;
+    color: white;
+    top: 2px;
+    left: 2px;
+ }
+
+ /* Posição retaliva com absoluta */
+ /* Posição retaliva   */
+ .bloco-relativo{
+    width: 250px;
+    height: 250px;
+    border: 2px solid blue;
+    margin-top: 100px;
+    position: relative;
+ }
+ /* Posição Absoluta dentro da relativa - posiciono onde quiser aceita top left etc */
+ .bloco-absoluto1, .bloco-absoluto2 {
+    width: 70px;
+    height: 70px;
+    background-color: brown;
+    position: absolute; 
+ }
+/* diferenciar a posição deles absoluto 1 e 2 */
+ .bloco-absoluto1{
+    top:5px;
+    left:5px;
+ }
+
+ .bloco-absoluto2{
+    bottom:5px;
+    right:5px;
+ }
+/* faz com que a "clase sticky" fixe em um ponto, mesmo rolando a tela */
+ .sticky{
+    width: 150px;
+    height: 150px;
+    background-color: firebrick;
+    color: aliceblue;
+    border: 2px solid black;
+    position: sticky;
+    top: 10px;
+    right: 10px;
+    margin-left: auto;
+    
+ }
+
+ /* Z-index - como se fosse o embaralhar um item sobreposto ao outro,
+ "com indice do maior para menor" pelo z-index */
+
+ .bloco-absoluto3, .bloco-absoluto4, .bloco-absoluto5{
+    width: 60px;
+    height: 60px;
+    background-color: coral;
+    position: absolute;
+ }
+/* para diferenciar os elementos, aceita top left etc */
+  .bloco-absoluto3{
+    top:0px;
+    left:0px;
+    z-index: 3;
+  }
+
+  .bloco-absoluto4{
+    top:15px;
+    left:15px;
+    background-color: darkgray;
+    z-index: 2;
+  }
+
+  .bloco-absoluto5{
+    top:30px;
+    left:30px;
+    background-color: lightgreen;
+    z-index: 1;
+  }

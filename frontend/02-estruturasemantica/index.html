@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barbearia Estilo e Tradição</title>
+    <link rel="stylesheet" href="./css/style.css" /> <!-- link entre css e html. rel = folha de estilo -->
+</head>
+<body>
+    <!-- Headar: o cabeçalho principal da página -->
+    <!-- será uma landing pages  = uma só -->
+     <header>
+        <h1> Barbearia Estilo e Tradição</h1>
+        <ul class="header-menu"> <!-- uma classe tipo menu de cabeçalho ul lista sem ordem -->
+            <li><a href="#servicos">Serviços</a></li> <!-- li = links -->
+            <li><a href="#sobre">Sobre Nós</a></li>
+            <li><a href="#contato">Contato</a></li>
+        </ul>
+    </header>
+
+    <!--Nav: Menu de navegação rápida o va já é uma lista -->
+    <nav>
+        <h2>Acesso Rápido:</h2>
+        <a href="#servicos">Design de Barba</a>
+        <a href="#servicos">Cortes Masculinos</a>
+        <a href="#produtos">Produtos</a>
+    </nav>
+<!-- Main: Conteúdo principal da página -->
+    <main> 
+    <!-- Section: Seção de serviços -->
+     <section id="servicos">
+        <h2>Nossos Serviços e Produtos</h2>
+        <p><strong>Design de Barba:</strong> Alinhamento com toalha quente e navalha.</p>
+        <p><strong>Cortes Masculinos:</strong> Estilos clássicos e modernos degradê.</p>
+        <p><strong>Produtos para Autocuidado:</strong> Óleos hidratantes, balas e pomadas modeladoras.</p>
+    </section>
+
+    <!-- Section: Seção sobre a Barbearia - faz parte do site é # do article-->
+     <section id="sobre">
+        <h2>Sobre Nós</h2>
+        <ul>
+            <li><strong>Nossa missão:</strong> Elevar a autoestima masculina com excelência.</li>
+            <li><strong>Nossa visão:</strong> Ser a barbearia referência em qualidade e inovação na região.</li>
+            <li><strong>Nossos valores:</strong> Respeito à tradição. higiene rigorosa e inovação.</li>
+        </ul>
+     </section>
+    
+     <!-- Article: artigos informativos - servem como "blog" é # do section -->
+     <article>
+        <h2>Como cuidar da barba no dia a dia </h2>
+        <p>Manter a barba limpa e hidrata é fundamental para evitar ressamento e irritações na pele.</p>
+        <a href="#"> Ler artigo completo...</a>
+    </article>
+
+    <article>
+        <h2>Tendências de cortes para este ano</h2>
+        <p>Os cortes texturizados com laeruas bem baixas continuam em alta.</p>
+        <a href="#"> Ler artigo completo...</a>
+    </article>
+    
+    <!-- Figure: Imagem Ilustrativa -->
+     <figure>
+        <img src="./img/barbeariasampa.jpeg" alt="Interior da barbearia em São Paulo"/>
+        <figcaption>Ambiente da nossa unidade em São Paulo - Foto por José Silva</figcaption>
+     </figure>
+    </main>
+
+    <!-- Aside: Conteúdo lateral / Dicas ou produtos em destaque / propaganda -->
+    <aside>
+        <h2>Dicas do Barbeiro</h2>
+        <ul>
+            <li><a href='#'>Como escolher a pomada ideal para o seu cabelo</a></li>
+            <li><a href='#'>A importância de barbear após o banho quente</a></li>
+            <li><a href='#'>Frequência correta para lavar a barba</a></li>
+        </ul>
+    </aside>
+
+    <!-- Footer: rodapé da página -->
+     <footer>
+        <div id="contato"> <!-- uma divisão , meio que invisível com título e 2 paragráfos -->
+            <h2>Entre em contato com a nossa barbearia</h2>
+            <p>Email: contato@estilobarbearia.com.br</p>
+            <p>WhatsApp: (011) 98888-7777</p>
+            <!-- Mapa google  -->
+             <div class="midia-box" style="margin-top: 20px;"> <!-- div - uma divisão -->
+                <p><strong>Venha nos conhecer</strong></p>
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3654.8063686524392!2d-46.703840799999995!3d-23.6471045!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce50f8ac76dfdb%3A0xc160a87f059ec93d!2sSenac%20Largo%20Treze!5e0!3m2!1spt-BR!2sbr!4v1791397101614!5m2!1spt-BR!2sbr"
+                    height="200"
+                    style="border:0;"
+                    allowfullscreen="" 
+                    loading="lazy"
+                    title="Mapa de Exemplo">
+                </iframe>
+             </div>
+        </div>
+        <p class="copyright">Criado por Kau.Tech - 2026 - Desenvolvimento HTML CSS</pclass></p>
+     </footer>
+
+</body>
+</html>
+
+<!--  -->

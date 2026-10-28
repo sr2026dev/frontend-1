@@ -1,0 +1,30 @@
+h3{
+    color: green;
+}
+
+/* classe tem o .nome */
+.paragrafo{
+    background-color: black;
+    color: yellow;
+    padding: 5px;
+}
+
+/* id chama pelo #nome */
+#titulocomid{
+    background-color: green;
+    color: #fff;
+    font-size: 40px;
+}
+
+/* Regra de ordem Css */
+h4{
+    border-bottom: 2px solid blue; 
+}
+
+.class-titulo{
+    border-bottom: 3px solid red;
+}
+
+#id-titulo{
+    border-bottom: 4px solid black;
+}
